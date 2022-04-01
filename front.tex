@@ -1,0 +1,51 @@
+% -------------------------------- Front page
+% -------------------------------- "Global front stuff" xd
+\newcommand{\docenteUM}{Docente 1}
+\newcommand{\docenteDOIS}{}
+\newcommand{\docenteTRES}{}
+
+\newcommand{\data}{Abril 2022} % CHANGE HERE
+\date{Abril 2022} % idk, didnt work xd
+
+\newcommand{\subtitle}{Subtítulo}
+\newcommand{\titulo}{Título} % CHANGE HERE
+\title{Título}
+\newcommand{\departmento}{Departamento de Engenharia Eletrónica e de
+Telecomunicações e Computadores}
+\newcommand{\curso}{Licenciatura em Engenharia Informática e de Computadores}
+
+% -------------------------------- Front content
+\begin{center}\leavevmode
+    \normalfont
+    \includegraphics[width=0.75\columnwidth]{img/isel.jpg}
+    \vskip 1cm 
+    \textsc{\Large \departmento}\\[1 cm]
+    {\large \curso}
+    \vskip 1cm
+    \rule{\linewidth}{0.2 mm}
+    {\huge \bfseries \titulo \par}
+    \vskip 1cm
+    {\Large \bfseries \subtitle \par}
+           
+    \rule{\linewidth}{0.2 mm}\\[1.5 cm]
+     
+    \begin{minipage}[t]{0.45\textwidth}
+    	\begin{flushleft} \large
+    		\emph{Alun@s:}\\
+    		A11231 - Nome Aluno 1\\
+    		A48121 - Nome Aluno 2\\
+    		A39411 - Nome Aluno 3
+    	\end{flushleft}
+    \end{minipage}
+    \begin{minipage}[t]{0.45\textwidth}
+        \begin{flushright} \large
+        	{\emph{Docentes:}}\\
+        	\ifdefempty{\docenteUM}{}{\docenteUM\\}
+        	\ifdefempty{\docenteDOIS}{}{\docenteDOIS\\}
+        	\ifdefempty{\docenteTRES}{}{\docenteTRES\\}
+        \end{flushright}
+    \end{minipage}
+    \vfill
+    {\normalsize \data\par}
+\end{center}
+\cleardoublepage
